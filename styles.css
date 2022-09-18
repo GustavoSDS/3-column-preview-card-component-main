@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* ## Colors */
+
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDrkCyan: hsl(179, 100%, 13%);
+
+    --transparentWhiteP: hsla(0, 0%, 100%, 0.75);
+    /* paragraphs */
+    --veryLightGray: hsl(0, 0%, 95%);
+    /* background, headings, buttons */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--veryLightGray);
+}
+
+.main-container {
+    width: 325px;
+    margin: 87px auto 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+article {
+    width: 100%;
+    height: 440px;
+    padding: 48px;
+}
+
+#sedans {
+    background-color: var(--brightOrange);
+}
+
+#suvs {
+    background-color: var(--darkCyan);
+}
+
+#luxury {
+    background-color: var(--veryDrkCyan);
+}
+
+img {
+    margin-bottom: 36px;
+}
+
+h2 {
+    color: var(--veryLightGray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+p {
+    color: var(--transparentWhiteP);
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 148px;
+    height: 46px;
+    border-radius: 45px;
+    border-style: none;
+    background-color: var(--veryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+#sedans-btn {
+    color: var(--brightOrange);
+}
+
+#suvs-btn {
+    color: var(--darkCyan);
+}
+
+#luxury-btn {
+    color: var(--veryDrkCyan);
+}
+
+button:hover {
+    cursor: pointer;
+    border: 2px solid var(--veryLightGray);
+}
+
+#sedans-btn:hover {
+    background-color: var(--brightOrange);
+    color: var(--veryLightGray);
+}
+
+#suvs-btn:hover {
+    background-color: var(--darkCyan);
+    color: var(--veryLightGray);
+}
+
+#luxury-btn:hover {
+    background-color: var(--veryDrkCyan);
+    color: var(--veryLightGray);
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media queries desktop */
+@media (min-width:944px) {
+    .main-container{
+       width: 924px;
+       display: flex;
+       margin-top: 170px;
+    }
+    article{
+        height: 500px;
+    }
+    p{
+        margin-bottom: 80px;
+    }
+}
